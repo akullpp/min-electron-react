@@ -1,23 +1,23 @@
 {
   "name": "min-electron-react",
-  "version": "1.0.0",
-  "main": "index.js",
-  "private": true,
-  "scripts": {
-    "dev": "webpack --watch",
-    "start": "electron ."
+  "version": "0.0.1",
+  "license": "MIT",
+  "homepage": "./",
+  "main": "src/electron-starter.js",
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "foreman": "^2.0.0",
+    "react-scripts": "^1.0.14"
   },
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
-  "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "electron": "^1.4.15",
-    "webpack": "^2.2.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "electron": "electron .",
+    "dev": "nf start -p 3000"
   }
 }
